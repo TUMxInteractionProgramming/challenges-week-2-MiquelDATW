@@ -9,11 +9,10 @@
   * Accent color_text: black
   */
 
-/****************** Global styles ******************************/
+/****************** Global ******************************/
 * {
 	/* #2 #font #faces */
 	font-family: 'Arial', sans-serif;
-	border: 1px solid red;
 	padding: 0;
 	margin: 0;
 }
@@ -23,57 +22,109 @@ body {
 	background-color: #F5F5F5;
 }
 
-h1 {
-	/* #2 #colourful #app-bar */
-	background-color: #3F51B5;
-	color: white;
-}
-
-button {
-	/* #2 #colourful #plusfive */
-	background-color: #CDDC39;
-	color: black;
-	/* #2 #font capital #letters */
-	text-transform: uppercase;
-}
-
-
-/****************** styles for channel area ******************************/
-li {
-	/* #2 #colorful #channelandchat */
-	background-color: white;
-}
-ul {
-	background-color: white;
-	list-style: none;
-}
-
-/****************** styles for chat area ******************************/
-p {
-	/* #2 #colorful #channelandchat */
-	background-color: white;
-}
-
-strong {
+.upper-case {
 	/* #2 #font #locations need an extra element, we'll use strong for w3w locations */
 	text-transform: uppercase;
-}
-
-h3 {
-	/* #2 #font #metadata is now medium */
-	font-size: medium;
-}
-
-em {
-	/* #2 #font #remaining overrides the default italic appearance of em elements*/
-	font-size: larger;
-	font-style: normal;
 }
 
 a{
 	color: #3F51B5;
 }
 
+/****************** App bar  ******************************/
+
+.app-bar {
+	/* #2 #colourful #app-bar */
+	background-color: #3F51B5;
+	color: white;
+}
+
+/****************** Channels list ******************************/
+
+#channels-list li {
+	/* #2 #colorful #channelandchat */
+	background-color: white;
+	padding: 16px;
+	font-size: 16px;
+}
+#channels-list ul {
+	background-color: white;
+	list-style: none;
+}
+
+#channels-list li img{
+	vertical-align: middle;
+}
+
+#channels-list ul li.selected{
+	color: #3F51B5;
+	border-left: 4px solid #3F51B5;
+}
+
+
+/****************** Tab bar ******************************/
+
+#tab-bar button{
+	/* #2 #font #locations need an extra element, we'll use strong for w3w locations */
+	text-transform: uppercase;
+	background-color: white;
+	border: none;
+	font-size: 13px;
+	width: 33%;
+	height: 72px;
+	padding: 16px;
+}
+
+#tab-bar button img{
+	display: block;
+	margin: auto;
+	margin-bottom: 4px;
+}
+
+#tab-bar button.selected{
+	border-bottom: 4px solid #3F51B5;
+	color: #3F51B5;
+}
+
+/****************** Messages ******************************/
+
 #chat-area div{
 	width: 80%;
+}
+
+.message{
+
+	width: 80%;
+	margin-left: 2.5%;
+	margin-bottom: 8px;
+	font-size: medium;
+	background-color: white;
+	padding: 16px;
+}
+
+.message button{
+	/* #2 #colourful #plusfive */
+	background-color: #CDDC39;
+	color: black;
+	text-transform: uppercase;
+}
+
+.message h3 {
+	/* #2 #font #metadata is now medium */
+	font-size: medium;
+}
+
+.message em{
+	/* #2 #font #remaining overrides the default italic appearance of em elements*/
+	font-size: larger;
+	font-style: normal;
+}
+
+.message p{
+	margin: 16px;
+	background-color: white;
+}
+
+.own-message{
+	margin-left: 15%;
 }
